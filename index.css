@@ -1,0 +1,430 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Battambang&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+:root{
+    --color-red : red;
+    --color-pink : rgb(250, 71, 133);
+    --color-green : rgb(74, 179, 74);
+    --color-yellow : rgb(251, 172, 13);
+    --color-blue   : rgb(76, 76, 237);
+    --color-black  : rgb(41, 40, 40);
+}
+header{
+    padding: 10px;
+    position: sticky;
+    top: 0px;
+    z-index: 999999;
+    background-color: rgba(250, 250, 250, 0.838);
+}
+.container .header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* .container .header img{
+    box-shadow: 0px 0px 3px rgb(255, 255, 255);
+    border-radius: 2px;
+} */
+.header span{
+    display: block;
+}
+.header span .bar{
+    font-size: 20px;
+    padding: 10px 25px;
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(48, 48, 139);
+    font-family: 'Battambang';
+    transition: all 0.3s;
+}
+.header span .color{
+    color: white;
+    font-size: 20px;
+    margin-left: 30px;
+    text-decoration: none;
+    font-weight: bold;
+}
+.header span .bar:hover{
+    color: white;
+    background-color: var(--color-blue);
+    border-radius: 5px;
+}
+.header p{
+    display: none;
+}
+.header p i{
+    cursor: pointer;
+    font-size: 25px;
+    padding: 10px 15px;
+    transition: all 0.3s;
+}
+.header p i:hover{
+    color: rgb(64, 63, 63);
+    background-color: rgb(229, 227, 227);
+    padding: 10px 15px;
+    border-radius: 3px;
+}
+#register{
+    display: none;
+    background-color: rgb(117, 147, 254);
+    width: 50%;
+    margin: 10px auto;
+    padding-bottom: 20px;
+    box-shadow: 0px 0px 10px rgb(116, 115, 115);
+}
+#register span{
+    padding-top: 10px;
+    padding-left: 95%;
+}
+#register span i{
+    color: white;
+    padding-top: 10px;
+    font-size: 25px;
+    cursor: pointer;
+    opacity: 0.7;
+}
+#register span i:hover{
+    opacity: 1;
+    color: rgb(181, 14, 14);
+}
+#register h2{
+    color: white;
+    text-align: center;
+    padding: 10px 5px;
+    text-shadow: 0px 4px 4px rgb(19, 18, 18);
+}
+label{
+    font-weight: bold;
+}
+main{
+    width: 100%;
+    margin-top: 30px;
+}
+.bar_contain{
+    transition: all 0.8s;
+    width: 100%;
+    padding: 15px;
+    position: absolute;
+    left: -100%;
+    z-index: 8888;
+}
+.bar_contain ul{
+    list-style-type: none;
+}
+.bar_contain ul li{
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:10px;
+    border-radius: 4px;
+}
+.bar_contain ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+}
+.bar_contain ul li:hover{
+    background-color: rgba(224, 222, 152, 0.527);
+    margin-top: 10px;
+}
+main .a{
+    text-decoration: none;
+}
+.clip_path_t_shirt{
+    border-bottom: 4px solid var(--color-red);
+}
+.clip_path_t_shirt .clip_path_in{
+    clip-path: polygon(0 0, 85% 0, 100% 100%, 0% 100%);
+    width: 20%;
+    padding: 4px;
+    background-color: var(--color-red);
+    color: white;
+    font-family: 'Lobster';
+}
+.clip_path_shoes{
+    border-bottom: 4px solid var(--color-blue);
+}
+.clip_path_shoes .clip_path_in{
+    clip-path: polygon(0 0, 85% 0, 100% 100%, 0% 100%);
+    width: 20%;
+    padding: 4px;
+    background-color: var(--color-blue);
+    color: white;
+    font-family: 'Lobster';
+}
+.clip_path_pants{
+    border-bottom: 4px solid var(--color-green);
+}
+.clip_path_pants .clip_path_in{
+    clip-path: polygon(0 0, 85% 0, 100% 100%, 0% 100%);
+    width: 20%;
+    padding: 4px;
+    background-color: var(--color-green);
+    color: white;
+    font-family: 'Lobster';
+}
+.clip_path_hat{
+    border-bottom: 4px solid var(--color-pink);
+}
+.clip_path_hat .clip_path_in{
+    clip-path: polygon(0 0, 85% 0, 100% 100%, 0% 100%);
+    width: 20%;
+    padding: 4px;
+    background-color: var(--color-pink);
+    color: white;
+    font-family: 'Lobster';
+}
+.clip_path_skirt{
+    border-bottom: 4px solid var(--color-yellow);
+}
+.clip_path_skirt .clip_path_in{
+    clip-path: polygon(0 0, 85% 0, 100% 100%, 0% 100%);
+    width: 20%;
+    padding: 4px;
+    background-color: var(--color-yellow);
+    color: white;
+    font-family: 'Lobster';
+}
+.product{
+    margin-top: 20px;
+    width: 100%;
+    box-shadow: 4px 4px 8px rgb(227, 225, 225);
+    color: black;
+    transition: all 0.3s;
+    border-radius: 5px;
+}
+.product:hover{
+    transform: scale(1.05);
+}
+.product img{
+    width: 100%;
+}
+.product .star{
+    color: rgb(252, 184, 25);
+}
+.product .span{
+    color: var(--color-blue);
+    font-weight: bold;
+}
+del{
+    color: red;
+    font-weight: bold;
+}
+.product ul{
+    list-style-type: none;
+    font-size: 13px;
+    color: black;
+}
+.right_div{
+    font-size: 7px;
+}
+#create_new{
+    display: none;
+    background-color: rgb(71, 211, 99);
+    width: 50%;
+    margin: 10px auto;
+    padding-bottom: 20px;
+    box-shadow: 0px 0px 10px rgb(116, 115, 115);
+}
+#create_new span{
+    padding-top: 10px;
+    padding-left: 95%;
+}
+#create_new span i{
+    color: white;
+    padding-top: 10px;
+    font-size: 25px;
+    cursor: pointer;
+    opacity: 0.7;
+}
+#create_new span i:hover{
+    opacity: 1;
+    color: rgb(181, 14, 14);
+}
+#create_new h2{
+    color: white;
+    text-align: center;
+    padding: 10px 5px;
+    text-shadow: 0px 4px 4px rgb(19, 18, 18);
+}
+label{
+    font-weight: bold;
+}
+.shadow{
+    border-radius: 10px;
+    width: 90%;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.37);
+    border: 2px solid rgba(255, 255, 255, 0.486);
+}
+input[type="button"]{
+    color: white;
+    font-weight: bold;
+}
+/* Medai repornsive */
+/* laptop */
+@media (max-width: 1399.98px) {
+    .bar_contain{
+        display: none;
+    }
+}
+/* ipad pro */
+@media (max-width: 1199.98px) {
+    .bar_contain{
+        display: none;
+    }
+    .col-8 {
+        flex: 0 0 auto;
+        width: 100%;
+    }
+    .col-4 {
+        flex: 0 0 auto;
+        width: 50%;
+    }
+    .header span .bar {
+        font-size: 15px;
+        padding: 10px 25px;
+        text-decoration: none;
+        font-weight: bold;
+        color: rgb(48, 48, 139);
+        font-family: 'Battambang';
+        transition: all 0.3s;
+    }
+    .header span {
+        display: flex;
+    }
+}
+/* ipad */
+@media (max-width: 991.98px) {
+    .bar_contain{
+        display: block;
+    }
+    .header span .bar {
+        font-size: 16px;
+        padding: 10px 10px;
+        text-decoration: none;
+        font-weight: bold;
+        color: rgb(48, 48, 139);
+        font-family: 'Battambang';
+        transition: all 0.3s;
+    }
+    .header span .color {
+        color: white;
+        font-size: 17px;
+        margin-left: 20px;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    .header span{
+        display: none;
+    }
+    .header p{
+        display: flex;
+    }
+    .col-8 {
+        flex: 0 0 auto;
+        width: 100%;
+    }
+    .col-3 {
+        flex: 0 0 auto;
+        width: 33.33%;
+    }
+    .col-4 {
+        flex: 0 0 auto;
+        width: 100%;
+    }
+    .right_div .col-3 {
+        flex: 0 0 auto;
+        width: 50%;
+    }
+    .right_div {
+        font-size: 18px;
+    }
+}
+/* Mobile phone */
+@media (max-width: 767.98px) {
+    .bar_contain{
+        display: block;
+    }
+    .header span .bar {
+        font-size: 10px;
+        padding: 5px 5px;
+        text-decoration: none;
+        font-weight: bold;
+        color: rgb(48, 48, 139);
+        font-family: 'Battambang';
+        transition: all 0.3s;
+    }
+    .header span{
+        display: none;
+    }
+    h3 {
+        font-size: 18px;
+    }
+}
+/* Mobile phone */
+@media (max-width: 575.98px) {
+    .bar_contain{
+        display: block;
+    }
+    .header span .bar {
+        font-size: 10px;
+        padding: 5px 3px;
+        text-decoration: none;
+        font-weight: bold;
+        color: rgb(48, 48, 139);
+        font-family: 'Battambang';
+        transition: all 0.3s;
+    }
+    .header span input{
+        font-size: 10px;
+    }
+    .header p{
+        display: flex;
+    }
+    .col-8 {
+        width: 100%;
+        flex: 0 0 auto;
+    }
+    .col-4 {
+        flex: 0 0 auto;
+        width: 80%;
+    }
+    .col-3 {
+        width: 50%;
+        flex: 0 0 auto;
+    }
+    .product ul {
+        list-style-type: none;
+        font-size: 9px;
+        color: black;
+    }
+    #register span {
+        padding-top: 10px;
+        padding-left: 90%;
+    }
+    label {
+        font-weight: bold;
+        font-size: 16px;
+    }
+    #register {
+        display: none;
+        background-color: rgb(117, 147, 254);
+        width: 80%;
+        margin: 10px auto;
+        padding-bottom: 20px;
+        box-shadow: 0px 0px 10px rgb(116 115 115);
+    }
+    h3 {
+        font-size: 18px;
+    }
+}
