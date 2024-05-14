@@ -22,10 +22,6 @@ function bar_contain(){
         document.querySelector(".bar_contain").style.display="block";
         i=0;
     }
-    if (i=!0) {
-        document.querySelector(".bar_contain").style.left="";
-        document.getElementById("main").style.display="block";
-    } 
     else{
         document.querySelector(".bar_contain").style.left="-100%";
         document.getElementById("register").style.display="none";
