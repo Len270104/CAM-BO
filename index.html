@@ -6,482 +6,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <link rel="stylesheet" href="./Bootstrap/css/bootstrap.css">
-    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="">
     <link rel="icon" href="./image/LOGO_CAM_BO_12.png" type="image/x-icon">
     <title>Document</title>
 
 </head>
 <body>
-    <header>
-        <div class="container">
-            <div class="header">
-                <img src="./image/LOGO_CAM_BO_12.png" alt="Image Not Found." width="8%">
-                <span>
-                    <a class="bar" href="" style="background-color: var(--color-blue); color:white; border-radius: 5px;"><i class="fas fa-home"></i></a>
-                    <a class="bar" href=""><i class="fas fa-tshirt"></i> T-Shirt</a>
-                    <a class="bar" href=""><i class="fas fa-tshirt"></i> Shirt</a>
-                    <a class="bar" href="">Skirt</a>
-                    <a class="bar" href=""><i class="fas fa-shoe-prints"></i> Shoes</a>
-                    <a class="bar" href="">Pants</a>
-                    <a class="bar" href=""><i class="fab fa-redhat"></i> Hat</a>
-                    <input class="btn btn-danger" type="button" value="Log In" onclick="Form()">
-                    <input class="btn btn-success" type="button" value="Creat New" onclick="Create()">
-                </span>
-                <p><i class="fas fa-bars" onclick="bar_contain()"></i></p>
-            </div>
-        </div>
-    </header>
- 
-    <div id="register">
-        <span onclick="closeForm()"><i class="far fa-times-circle"></i></span>
-        <h2>Welcome To Online Shop</h2>
-        <div class="shadow">
-            <form action="">
-                <label for="email">Email or Phone Number</label><br>
-                <input type="email" name="" id="email" placeholder="Enter Email or Phone Number" class="form-control">
-                <label for="password">Passwords</label>
-                <input type="password" name="" id="password" placeholder="Enter Passwords" class="form-control">
-                <label for="con_pass">Confirm Passwords</label>
-                <input type="password" name="" id="con_pass" placeholder="Confirm Passwords" class="form-control"><br>
-                <input id="btn" class="btn btn-success" type="button" value="Sign In" onclick="Alert()">
-                <input id="btn_new" class="btn btn-primary" type="button" value="Cancel" onclick="closeForm()">
-            </form>
-        </div>
-    </div>
-    <div id="create_new">
-        <span onclick="closeForm()"><i class="far fa-times-circle"></i></span>
-        <h2>Create Your New Account</h2>
-        <div class="shadow">
-            <form action="">
-                <label for="fname">First Name</label>
-                <input type="text" name="" id="fname" placeholder="Enter first name" class="form-control">
-                <label for="lname">Last Name</label>
-                <input type="text" name="" id="lname" placeholder="Enter last name" class="form-control">
-                <label for="email">Email or Phone Number</label><br>
-                <input type="email" name="" id="email" placeholder="Enter Email or Phone Number" class="form-control">
-                <label for="password">Passwords</label>
-                <input type="password" name="" id="password" placeholder="Enter Passwords" class="form-control">
-                <label for="con_pass">Confirm Passwords</label>
-                <input type="password" name="" id="con_pass" placeholder="Confirm Passwords" class="form-control">
-                <label for="date">Date of birth</label>
-                <input type="date" name="" id="date" class="form-control"><br>
-                <input id="btn" class="btn btn-warning" type="button" value="Creat" onclick="Alert()">
-                <input id="btn_new" class="btn btn-primary" type="button" value="Cancel" onclick="closeForm()">
-            </form>
-        </div>
-    </div>
-    <div class="bar_contain bg-warning">
-        <ul>
-            <li style="background-color: rgba(224, 222, 152, 0.527);"><a href=""><i class="fas fa-home"></i></a></li>
-            <li><a href="">T-Shirt</a></li>
-            <li><a href="">Shirt</a></li>
-            <li><a href="">Skirt</a></li>
-            <li><a href="">Shoes</a></li>
-            <li><a href="">Pants</a></li>
-            <li><a href="">Hat</a></li><br>
-            <input class="btn btn-danger" type="button" value="Log In" onclick="Form()">
-            <input class="btn btn-success" type="button" value="Creat New" onclick="Create()">
-        </ul>
-    </div>
-    <main id="main">
-        <div class="container">
-            <div class="row">
-                <div class="col-8">
-                    <div class="clip_path_t_shirt">
-                        <div class="clip_path_in">
-                            <h3>T-Shirt</h3>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-3">
-                            <a class="a" href="">
-                                <div class="product">
-                                    <img src="../Image/Car_Forbes.jpg" alt="">
-                                    <span class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></span><br>
-                                    <span>T-Shirt &nbsp;&nbsp;</span><span class="span"><del>120$</del>&nbsp;&nbsp;103$</span>
-                                    <div class="border"></div>
-                                    <ul>
-                                        <li>Brank DUBAI</li>
-                                        <li>Made in UAS</li>
-                                        <li>Sell and delivery in Cambodia</li>
-                                    </ul>
-                                </div>   
-                            </a>
-                        </div>
-                        <div class="col-3">
-                            <a class="a" href="">
-                                <div class="product">
-                                    <img src="../Image/Car_Forbes.jpg" alt="">
-                                    <span class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></span><br>
-                                    <span>T-Shirt &nbsp;&nbsp;</span><span class="span"><del>120$</del>&nbsp;&nbsp;103$</span>
-                                    <div class="border"></div>
-                                    <ul>
-                                        <li>Brank DUBAI</li>
-                                        <li>Made in UAS</li>
-                                        <li>Sell and delivery in Cambodia</li>
-                                    </ul>
-                                </div>   
-                            </a>
-                        </div>
-                        <div class="col-3">
-                            <a class="a" href="">
-                                <div class="product">
-                                    <img src="../Image/Car_Forbes.jpg" alt="">
-                                    <span class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></span><br>
-                                    <span>T-Shirt &nbsp;&nbsp;</span><span class="span"><del>120$</del>&nbsp;&nbsp;103$</span>
-                                    <div class="border"></div>
-                                    <ul>
-                                        <li>Brank DUBAI</li>
-                                        <li>Made in UAS</li>
-                                        <li>Sell and delivery in Cambodia</li>
-                                    </ul>
-                                </div>   
-                            </a>
-                        </div>
-                        <div class="col-3">
-                            <a class="a" href="">
-                                <div class="product">
-                                    <img src="../Image/Car_Forbes.jpg" alt="">
-                                    <span class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></span><br>
-                                    <span>T-Shirt &nbsp;&nbsp;</span><span class="span"><del>120$</del>&nbsp;&nbsp;103$</span>
-                                    <div class="border"></div>
-                                    <ul>
-                                        <li>Brank DUBAI</li>
-                                        <li>Made in UAS</li>
-                                        <li>Sell and delivery in Cambodia</li>
-                                    </ul>
-                                </div>   
-                            </a>
-                        </div>
-                    </div>
-                    <div class="clip_path_shoes">
-                        <div class="clip_path_in">
-                            <h3>Shoes</h3>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-3">
-                            <a class="a" href="">
-                                <div class="product">
-                                    <img src="../Image/Angkor-Wat-Cambodia.webp" alt="">
-                                    <span class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></span><br>
-                                    <span>T-Shirt &nbsp;&nbsp;</span><span class="span"><del>120$</del>&nbsp;&nbsp;103$</span>
-                                    <div class="border"></div>
-                                    <ul>
-                                        <li>Brank DUBAI</li>
-                                        <li>Made in UAS</li>
-                                        <li>Sell and delivery in Cambodia</li>
-                                    </ul>
-                                </div>   
-                            </a>
-                        </div>
-                        <div class="col-3">
-                            <a class="a" href="">
-                                <div class="product">
-                                    <img src="../Image/Angkor-Wat-Cambodia.webp" alt="">
-                                    <span class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></span><br>
-                                    <span>T-Shirt &nbsp;&nbsp;</span><span class="span"><del>120$</del>&nbsp;&nbsp;103$</span>
-                                    <div class="border"></div>
-                                    <ul>
-                                        <li>Brank DUBAI</li>
-                                        <li>Made in UAS</li>
-                                        <li>Sell and delivery in Cambodia</li>
-                                    </ul>
-                                </div>   
-                            </a>
-                        </div>
-                        <div class="col-3">
-                            <a class="a" href="">
-                                <div class="product">
-                                    <img src="../Image/Angkor-Wat-Cambodia.webp" alt="">
-                                    <span class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></span><br>
-                                    <span>T-Shirt &nbsp;&nbsp;</span><span class="span"><del>120$</del>&nbsp;&nbsp;103$</span>
-                                    <div class="border"></div>
-                                    <ul>
-                                        <li>Brank DUBAI</li>
-                                        <li>Made in UAS</li>
-                                        <li>Sell and delivery in Cambodia</li>
-                                    </ul>
-                                </div>   
-                            </a>
-                        </div>
-                        <div class="col-3">
-                            <a class="a" href="">
-                                <div class="product">
-                                    <img src="../Image/Angkor-Wat-Cambodia.webp" alt="">
-                                    <span class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></span><br>
-                                    <span>T-Shirt &nbsp;&nbsp;</span><span class="span"><del>120$</del>&nbsp;&nbsp;103$</span>
-                                    <div class="border"></div>
-                                    <ul>
-                                        <li>Brank DUBAI</li>
-                                        <li>Made in UAS</li>
-                                        <li>Sell and delivery in Cambodia</li>
-                                    </ul>
-                                </div>   
-                            </a>
-                        </div>
-                    </div>
-                    <div class="clip_path_pants">
-                        <div class="clip_path_in">
-                            <h3>Pants</h3>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-3">
-                            <a class="a" href="">
-                                <div class="product">
-                                    <img src="../Image/Angkor-Wat-Cambodia.webp" alt="">
-                                    <span class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></span><br>
-                                    <span>T-Shirt &nbsp;&nbsp;</span><span class="span"><del>120$</del>&nbsp;&nbsp;103$</span>
-                                    <div class="border"></div>
-                                    <ul>
-                                        <li>Brank DUBAI</li>
-                                        <li>Made in UAS</li>
-                                        <li>Sell and delivery in Cambodia</li>
-                                    </ul>
-                                </div>   
-                            </a>
-                        </div>
-                        <div class="col-3">
-                            <a class="a" href="">
-                                <div class="product">
-                                    <img src="../Image/Angkor-Wat-Cambodia.webp" alt="">
-                                    <span class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></span><br>
-                                    <span>T-Shirt &nbsp;&nbsp;</span><span class="span"><del>120$</del>&nbsp;&nbsp;103$</span>
-                                    <div class="border"></div>
-                                    <ul>
-                                        <li>Brank DUBAI</li>
-                                        <li>Made in UAS</li>
-                                        <li>Sell and delivery in Cambodia</li>
-                                    </ul>
-                                </div>   
-                            </a>
-                        </div>
-                        <div class="col-3">
-                            <a class="a" href="">
-                                <div class="product">
-                                    <img src="../Image/Angkor-Wat-Cambodia.webp" alt="">
-                                    <span class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></span><br>
-                                    <span>T-Shirt &nbsp;&nbsp;</span><span class="span"><del>120$</del>&nbsp;&nbsp;103$</span>
-                                    <div class="border"></div>
-                                    <ul>
-                                        <li>Brank DUBAI</li>
-                                        <li>Made in UAS</li>
-                                        <li>Sell and delivery in Cambodia</li>
-                                    </ul>
-                                </div>   
-                            </a>
-                        </div>
-                        <div class="col-3">
-                            <a class="a" href="">
-                                <div class="product">
-                                    <img src="../Image/Angkor-Wat-Cambodia.webp" alt="">
-                                    <span class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></span><br>
-                                    <span>T-Shirt &nbsp;&nbsp;</span><span class="span"><del>120$</del>&nbsp;&nbsp;103$</span>
-                                    <div class="border"></div>
-                                    <ul>
-                                        <li>Brank DUBAI</li>
-                                        <li>Made in UAS</li>
-                                        <li>Sell and delivery in Cambodia</li>
-                                    </ul>
-                                </div>   
-                            </a>
-                        </div>
-                    </div>
-                    <div class="clip_path_hat">
-                        <div class="clip_path_in">
-                            <h3>Hat</h3>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-3">
-                            <a class="a" href="">
-                                <div class="product">
-                                    <img src="../Image/Angkor-Wat-Cambodia.webp" alt="">
-                                    <span class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></span><br>
-                                    <span>T-Shirt &nbsp;&nbsp;</span><span class="span"><del>120$</del>&nbsp;&nbsp;103$</span>
-                                    <div class="border"></div>
-                                    <ul>
-                                        <li>Brank DUBAI</li>
-                                        <li>Made in UAS</li>
-                                        <li>Sell and delivery in Cambodia</li>
-                                    </ul>
-                                </div>   
-                            </a>
-                        </div>
-                        <div class="col-3">
-                            <a class="a" href="">
-                                <div class="product">
-                                    <img src="../Image/Angkor-Wat-Cambodia.webp" alt="">
-                                    <span class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></span><br>
-                                    <span>T-Shirt &nbsp;&nbsp;</span><span class="span"><del>120$</del>&nbsp;&nbsp;103$</span>
-                                    <div class="border"></div>
-                                    <ul>
-                                        <li>Brank DUBAI</li>
-                                        <li>Made in UAS</li>
-                                        <li>Sell and delivery in Cambodia</li>
-                                    </ul>
-                                </div>   
-                            </a>
-                        </div>
-                        <div class="col-3">
-                            <a class="a" href="">
-                                <div class="product">
-                                    <img src="../Image/Angkor-Wat-Cambodia.webp" alt="">
-                                    <span class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></span><br>
-                                    <span>T-Shirt &nbsp;&nbsp;</span><span class="span"><del>120$</del>&nbsp;&nbsp;103$</span>
-                                    <div class="border"></div>
-                                    <ul>
-                                        <li>Brank DUBAI</li>
-                                        <li>Made in UAS</li>
-                                        <li>Sell and delivery in Cambodia</li>
-                                    </ul>
-                                </div>   
-                            </a>
-                        </div>
-                        <div class="col-3">
-                            <a class="a" href="">
-                                <div class="product">
-                                    <img src="../Image/Angkor-Wat-Cambodia.webp" alt="">
-                                    <span class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></span><br>
-                                    <span>T-Shirt &nbsp;&nbsp;</span><span class="span"><del>120$</del>&nbsp;&nbsp;103$</span>
-                                    <div class="border"></div>
-                                    <ul>
-                                        <li>Brank DUBAI</li>
-                                        <li>Made in UAS</li>
-                                        <li>Sell and delivery in Cambodia</li>
-                                    </ul>
-                                </div>   
-                            </a>
-                        </div>
-                    </div>
-                    <div class="clip_path_skirt">
-                        <div class="clip_path_in">
-                            <h3>Hat</h3>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-3">
-                            <a class="a" href="">
-                                <div class="product">
-                                    <img src="../Image/Car_570.jpg" alt="">
-                                    <span class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></span><br>
-                                    <span>T-Shirt &nbsp;&nbsp;</span><span class="span"><del>120$</del>&nbsp;&nbsp;103$</span>
-                                    <div class="border"></div>
-                                    <ul>
-                                        <li>Brank DUBAI</li>
-                                        <li>Made in UAS</li>
-                                        <li>Sell and delivery in Cambodia</li>
-                                    </ul>
-                                </div>   
-                            </a>
-                        </div>
-                        <div class="col-3">
-                            <a class="a" href="">
-                                <div class="product">
-                                    <img src="../Image/Car_570.jpg" alt="">
-                                    <span class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></span><br>
-                                    <span>T-Shirt &nbsp;&nbsp;</span><span class="span"><del>120$</del>&nbsp;&nbsp;103$</span>
-                                    <div class="border"></div>
-                                    <ul>
-                                        <li>Brank DUBAI</li>
-                                        <li>Made in UAS</li>
-                                        <li>Sell and delivery in Cambodia</li>
-                                    </ul>
-                                </div>   
-                            </a>
-                        </div>
-                        <div class="col-3">
-                            <a class="a" href="">
-                                <div class="product">
-                                    <img src="../Image/Car_570.jpg" alt="">
-                                    <span class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></span><br>
-                                    <span>T-Shirt &nbsp;&nbsp;</span><span class="span"><del>120$</del>&nbsp;&nbsp;103$</span>
-                                    <div class="border"></div>
-                                    <ul>
-                                        <li>Brank DUBAI</li>
-                                        <li>Made in UAS</li>
-                                        <li>Sell and delivery in Cambodia</li>
-                                    </ul>
-                                </div>   
-                            </a>
-                        </div>
-                        <div class="col-3">
-                            <a class="a" href="">
-                                <div class="product">
-                                    <img src="../Image/Car_570.jpg" alt="">
-                                    <span class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></span><br>
-                                    <span>T-Shirt &nbsp;&nbsp;</span><span class="span"><del>120$</del>&nbsp;&nbsp;103$</span>
-                                    <div class="border"></div>
-                                    <ul>
-                                        <li>Brank DUBAI</li>
-                                        <li>Made in UAS</li>
-                                        <li>Sell and delivery in Cambodia</li>
-                                    </ul>
-                                </div>   
-                            </a>
-                        </div>
+    <!-- navbar & hero -->
+    <div class="container-xxl position-relative p-0">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 px-lg-5 py-3 py-lg-0">
+                <a href="" class="navbar-brand p-0">
+                    <img src="" alt="">
+                </a>
+
+                <button class="navbar-toggler" type="submit">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto py-0 pe-4">
+                        <a href="" class="nav-item nav-link active">Home</a>
+                        <a href="" class="nav-item nav-link active">About</a>
+                        <a href="" class="nav-item nav-link active">Service</a>
+                        <a href="" class="nav-item nav-link active">Menu</a>
+                        <a href="" class="nav-item nav-link active">Pages</a>
+                        <a href="" class="nav-item nav-link active">Contact</a>
+                        
                     </div>
                 </div>
-                <div class="col-4 right_div">
-                    <div class="row">
-                        <div class="col-3">
-                            <a class="a" href="">
-                                <div class="product">
-                                    <img src="../Image/Car_570.jpg" alt="">
-                                    <span class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></span><br>
-                                    <span>T-Shirt &nbsp;&nbsp;</span><span class="span"><del>120$</del>&nbsp;&nbsp;103$</span>
-                                    <div class="border"></div>
-                                    <span>Brank DUBAI</span><br>
-                                    <span>Made in UAS</span><br>
-                                    <span>Sell and delivery in Cambodia</span>
-                                </div>   
-                            </a>
-                        </div>
-                        <div class="col-3">
-                            <a class="a" href="">
-                                <div class="product">
-                                    <img src="../Image/Car_570.jpg" alt="">
-                                    <span class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></span><br>
-                                    <span>T-Shirt &nbsp;&nbsp;</span><span class="span"><del>120$</del>&nbsp;&nbsp;103$</span>
-                                    <div class="border"></div>
-                                    <span>Brank DUBAI</span><br>
-                                    <span>Made in UAS</span><br>
-                                    <span>Sell and delivery in Cambodia</span>
-                                </div>   
-                            </a>
-                        </div>
-                        <div class="col-3">
-                            <a class="a" href="">
-                                <div class="product">
-                                    <img src="../Image/Car_570.jpg" alt="">
-                                    <span class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></span><br>
-                                    <span>T-Shirt &nbsp;&nbsp;</span><span class="span"><del>120$</del>&nbsp;&nbsp;103$</span>
-                                    <div class="border"></div>
-                                    <span>Brank DUBAI</span><br>
-                                    <span>Made in UAS</span><br>
-                                    <span>Sell and delivery in Cambodia</span>
-                                </div>   
-                            </a>
-                        </div>
-                        <div class="col-3">
-                            <a class="a" href="">
-                                <div class="product">
-                                    <img src="../Image/Car_570.jpg" alt="">
-                                    <span class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></span><br>
-                                    <span>T-Shirt &nbsp;&nbsp;</span><span class="span"><del>120$</del>&nbsp;&nbsp;103$</span>
-                                    <div class="border"></div>
-                                    <span>Brank DUBAI</span><br>
-                                    <span>Made in UAS</span><br>
-                                    <span>Sell and delivery in Cambodia</span>
-                                </div>   
-                            </a>
-                        </div>
+        </nav>
+
+        <div class="container-xxl py-5 bg-dark hero-header mb-5">
+            <div class="container my-5 py-5">
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-6 text-center text-lg-start">
+                        <h1 class="display-3 text-white animated sliderInLeft">Enjoy Our <br> Delicious Meal</h1>
                     </div>
+
+                    <div class="col-lg-6 text-center text-lg-end overflow-hidden">
+                        <img src="./image/9-Major-Food-Allergens_0.png" width="490" class="img-fluid" alt="">
+                    </div>
+
                 </div>
             </div>
         </div>
-    </main>
+    </div>
+      <!-- navbar & hero ends -->
+
 </body>
 </html>
-<script src="./js/index.js"></script>
+<script src=""></script>
